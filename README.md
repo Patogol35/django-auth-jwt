@@ -18,11 +18,10 @@ Es una base sólida para construir aplicaciones web más grandes con Django REST
 
 ⚙️ Tecnologías utilizadas
 
-Django 5
-
-Django REST Framework
-
-Simple JWT
+- Python 3.12+
+- Django 5.0.6
+- Django REST Framework 3.15.1
+- JWT (djangorestframework-simplejwt)
 
 ---
 
@@ -64,8 +63,6 @@ python manage.py runserver
 
 👤 Autenticación
 
-Método	Endpoint	Descripción
-
 POST	/api/auth/register/	Registro de usuario
 
 POST	/api/auth/login/	Login con JWT (obtener access y refresh token)
@@ -101,8 +98,9 @@ Respuesta:
 }
 
 🔒 Endpoints protegidos según rol
-Método	Endpoint	Rol necesario
+
 GET	/api/admin-only/	Solo admin
+
 GET	/api/staff-only/	Staff y admin
 
 📌 Ejemplo de uso en Postman:
@@ -126,6 +124,7 @@ python manage.py createsuperuser
 
 
 o en el Django Admin Panel en:
+
 👉 http://127.0.0.1:8000/admin/
 
 📌 Notas importantes
