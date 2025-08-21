@@ -46,8 +46,6 @@ venv\Scripts\activate      # Windows
 
 pip install -r requirements.txt
 
-Si necesitas instalar Django manualmente:
-
 4️⃣ Migrar la base de datos
 
 python manage.py migrate
