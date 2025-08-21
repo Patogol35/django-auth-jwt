@@ -46,7 +46,7 @@ venv\Scripts\activate      # Windows
 
 pip install -r requirements.txt
 
-4️⃣ Migrar la base de datos
+4️⃣ Realizar Migraciones 
 
 python manage.py migrate
 
