@@ -29,7 +29,7 @@ Es una base sólida para construir aplicaciones web más grandes con Django REST
 
 1️⃣ Clonar el repositorio
 
-git clone https://github.com/tuusuario/django-auth-jwt.git
+git clone https://github.com/Patogol35/django-auth-jwt.git
 
 cd django-auth-jwt
 
