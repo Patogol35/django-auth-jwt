@@ -27,13 +27,13 @@ Es una base sólida para construir aplicaciones web más grandes con Django REST
 
 🚀 Instalación y Configuración
 
-1️⃣ Clonar el repositorio
+1. Clonar el repositorio
 
 git clone https://github.com/Patogol35/django-auth-jwt.git
 
 cd django-auth-jwt
 
-2️⃣ Crear entorno virtual
+2. Crear entorno virtual
 
 python -m venv venv
 
@@ -41,19 +41,19 @@ source venv/bin/activate   # Linux / Mac
 
 venv\Scripts\activate      # Windows
 
-3️⃣ Instalar dependencias
+3. Instalar dependencias
 
 pip install -r requirements.txt
 
-4️⃣ Realizar Migraciones 
+4. Realizar Migraciones 
 
 python manage.py migrate
 
-5️⃣ Crear superusuario
+5. Crear superusuario
 
 python manage.py createsuperuser
 
-6️⃣ Ejecutar servidor
+6. Ejecutar servidor
 
 python manage.py runserver
 
