@@ -48,8 +48,6 @@ pip install -r requirements.txt
 
 Si necesitas instalar Django manualmente:
 
-pip install django djangorestframework djangorestframework-simplejwt
-
 4️⃣ Migrar la base de datos
 
 python manage.py migrate
