@@ -14,6 +14,8 @@ Endpoints protegidos según rol
 
 Es una base sólida para construir aplicaciones web más grandes con Django REST Framework.
 
+---
+
 ⚙️ Tecnologías utilizadas
 
 Django 5
@@ -22,30 +24,46 @@ Django REST Framework
 
 Simple JWT
 
+---
+
 🚀 Instalación y Configuración
+
 1️⃣ Clonar el repositorio
+
 git clone https://github.com/tuusuario/django-auth-jwt.git
+
 cd django-auth-jwt
 
 2️⃣ Crear entorno virtual
+
 python -m venv venv
+
 source venv/bin/activate   # Linux / Mac
+
 venv\Scripts\activate      # Windows
 
 3️⃣ Instalar dependencias
+
 pip install -r requirements.txt
 
 4️⃣ Migrar la base de datos
+
 python manage.py migrate
 
 5️⃣ Crear superusuario
+
 python manage.py createsuperuser
 
 6️⃣ Ejecutar servidor
+
 python manage.py runserver
 
+---
+
 🔑 Endpoints disponibles
+
 👤 Autenticación
+
 Método	Endpoint	Descripción
 POST	/api/auth/register/	Registro de usuario
 POST	/api/auth/login/	Login con JWT (obtener access y refresh token)
@@ -124,6 +142,8 @@ Si visitas /api/ directamente, verás un 404, porque no hay endpoint definido en
 Usa las rutas documentadas arriba (/api/auth/..., /api/admin-only/, etc.).
 
 Puedes extender este sistema para incluir perfiles de usuario, permisos personalizados, integración con frontend (React, Vue, Angular).
+
+---
 
 👨‍💻 Autor
 
