@@ -106,18 +106,7 @@ Agregar en Headers:
 
 Authorization: Bearer <tu_access_token>
 
-📂 Estructura del proyecto
-django-auth-jwt/
-│── core/                # Proyecto principal
-│   ├── settings.py      # Configuración de Django
-│   ├── urls.py          # Rutas principales
-│── auth_app/            # App de autenticación
-│   ├── views.py         # Lógica de registro, login, perfil
-│   ├── urls.py          # Rutas de auth
-│   ├── serializers.py   # Serializadores DRF
-│── db.sqlite3           # Base de datos
-│── manage.py
-│── requirements.txt
+---
 
 👥 Roles de usuario en Django
 
