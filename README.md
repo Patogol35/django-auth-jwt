@@ -65,9 +65,13 @@ python manage.py runserver
 👤 Autenticación
 
 Método	Endpoint	Descripción
+
 POST	/api/auth/register/	Registro de usuario
+
 POST	/api/auth/login/	Login con JWT (obtener access y refresh token)
+
 POST	/api/auth/refresh/	Renovar token de acceso
+
 GET	/api/auth/me/	Obtener perfil del usuario autenticado
 
 📌 Ejemplo para registro:
