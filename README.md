@@ -2,15 +2,15 @@
 
 Este proyecto es un sistema de autenticación en Django que permite:
 
-Registro de usuarios
+- Registro de usuarios
 
-Inicio de sesión con JWT (JSON Web Tokens)
+- Inicio de sesión con JWT (JSON Web Tokens)
 
-Renovación de tokens
+- Renovación de tokens
 
-Asignación de roles de usuario (admin, staff, usuario normal)
+- Asignación de roles de usuario (admin, staff, usuario normal)
 
-Endpoints protegidos según rol
+- Endpoints protegidos según rol
 
 Es una base sólida para construir aplicaciones web más grandes con Django REST Framework.
 
@@ -25,15 +25,17 @@ Es una base sólida para construir aplicaciones web más grandes con Django REST
 
 ---
 
-🚀 Instalación y Configuración
+📦 Instalación y ejecución 
 
-1. Clonar el repositorio
+1. Clona el repositorio
 
 git clone https://github.com/Patogol35/django-auth-jwt.git
 
+2. Ingresa a la carpeta del proyecto
+
 cd django-auth-jwt
 
-2. Crear entorno virtual
+3. Crea el entorno virtual
 
 python -m venv venv
 
@@ -41,27 +43,27 @@ source venv/bin/activate   # Linux / Mac
 
 venv\Scripts\activate      # Windows
 
-3. Instalar dependencias
+4. Instala las dependencias
 
 pip install -r requirements.txt
 
-4. Realizar Migraciones 
+5. Realiza las Migraciones 
 
 python manage.py migrate
 
-5. Crear superusuario
+6. Crea un superusuario
 
 python manage.py createsuperuser
 
-6. Ejecutar servidor
+7. Ejecuta el servidor
 
 python manage.py runserver
 
 ---
 
-🔑 Endpoints disponibles
+🔗 Endpoints disponibles
 
-👤 Autenticación
+- Autenticación
 
 POST	/api/auth/register/	Registro de usuario
 
@@ -71,7 +73,7 @@ POST	/api/auth/refresh/	Renovar token de acceso
 
 GET	/api/auth/me/	Obtener perfil del usuario autenticado
 
-📌 Ejemplo para registro:
+- Ejemplo para registro:
 
 POST /api/auth/register/
 {
@@ -81,7 +83,7 @@ POST /api/auth/register/
 }
 
 
-📌 Ejemplo para login:
+- Ejemplo para login:
 
 POST /api/auth/login/
 {
@@ -97,13 +99,13 @@ Respuesta:
   "access": "eyJ0eXAiOiJKV1QiLCJhbGci..."
 }
 
-🔒 Endpoints protegidos según rol
+- Endpoints protegidos según rol
 
 GET	/api/admin-only/	Solo admin
 
 GET	/api/staff-only/	Staff y admin
 
-📌 Ejemplo de uso en Postman:
+- Ejemplo de uso en Postman:
 Agregar en Headers:
 
 Authorization: Bearer <tu_access_token>
@@ -127,7 +129,7 @@ o en el Django Admin Panel en:
 
 👉 http://127.0.0.1:8000/admin/
 
-📌 Notas importantes
+Notas importantes
 
 Si visitas /api/ directamente, verás un 404, porque no hay endpoint definido en esa ruta.
 
