@@ -29,35 +29,74 @@ Es una base sólida para construir aplicaciones web más grandes con Django REST
 
 1. Clona el repositorio
 
+```bash
+
 git clone https://github.com/Patogol35/django-auth-jwt.git
+
+```
 
 2. Ingresa a la carpeta del proyecto
 
+```bash
+
 cd django-auth-jwt
+
+```
 
 3. Crea el entorno virtual
 
+```bash
+
 python -m venv venv
 
-source venv/bin/activate   # Linux / Mac
+```
+En Linux/Mac: 
 
-venv\Scripts\activate      # Windows
+```bash
+
+source venv/bin/activate
+
+```
+
+En Windows: 
+
+```bash
+
+venv\Scripts\activate
+
+```   
 
 4. Instala las dependencias
 
+```bash
+
 pip install -r requirements.txt
 
-5. Realiza las Migraciones 
+```
+
+5. Realiza las Migraciones
+
+```bash
 
 python manage.py migrate
 
+```
+
 6. Crea un superusuario
+
+```bash
 
 python manage.py createsuperuser
 
+```
+
 7. Ejecuta el servidor
 
+```bash
+
 python manage.py runserver
+
+```
 
 8. El servidor estará disponible en:
 
